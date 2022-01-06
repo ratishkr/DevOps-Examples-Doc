@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -184,7 +184,7 @@ var activeTableTab = "activeTableTab";
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>1.0.0</dd>
 <dt><span class="simpleTagLabel">Version:</span></dt>
-<dd>2.5.0</dd>
+<dd>2.6.0</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../../com/compuware/api/topaz/hostconnections/zos/IZOSHostConnection.html" title="interface in com.compuware.api.topaz.hostconnections.zos"><code>IZOSHostConnection</code></a>, 
 <a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSet.html" title="interface in com.compuware.api.topaz.hostresources.zos"><code>IDataSet</code></a>, 
@@ -394,6 +394,19 @@ var activeTableTab = "activeTableTab";
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSetCommandProvider.html#isGenerationDataGroupsSupported--">isGenerationDataGroupsSupported</a></span>()</code>
 <div class="block">Returns if the associated z/OS host supports the generation data group methods of this <code>IDataSetCommandProvider</code>.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSetCommandProvider.html#renameDataset-java.util.TreeMap-">renameDataset</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html?is-external=true" title="class or interface in java.util">TreeMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;renameDataSetMap)</code>
+<div class="block">Rename a dataset with give name.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSetCommandProvider.html#renamePDSMember-java.lang.String-java.util.TreeMap-">renamePDSMember</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;DataSet,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html?is-external=true" title="class or interface in java.util">TreeMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;renameMemberMap)</code>
+<div class="block">Rename a member from given dataset.</div>
 </td>
 </tr>
 </table>
@@ -1191,7 +1204,7 @@ var activeTableTab = "activeTableTab";
 <a name="fetchGenerationDataSets-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>fetchGenerationDataSets</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSet.html" title="interface in com.compuware.api.topaz.hostresources.zos">IDataSet</a>&gt;&nbsp;fetchGenerationDataSets(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;generationDataGroupName)
@@ -1221,6 +1234,50 @@ var activeTableTab = "activeTableTab";
 <dd><a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSetCommandProvider.html#findGenerationDataSet-java.lang.String-int-"><code>findGenerationDataSet(String, int)</code></a>, 
 <a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSetCommandProvider.html#findGenerationSequentialDataSet-java.lang.String-int-"><code>findGenerationSequentialDataSet(String, int)</code></a>, 
 <a href="../../../../../../com/compuware/api/topaz/hostresources/zos/IDataSetCommandProvider.html#isGenerationDataGroupsSupported--"><code>isGenerationDataGroupsSupported()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="renameDataset-java.util.TreeMap-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>renameDataset</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;renameDataset(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html?is-external=true" title="class or interface in java.util">TreeMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;renameDataSetMap)
+                              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Rename a dataset with give name.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>renameDataSetMap</code> - A list of dataset to be renamed from and to.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>It will return an hashmap which contains respective response for member to be renamed.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - It will throw exception if there is an erroe in request.</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.6.0</dd>
+</dl>
+</li>
+</ul>
+<a name="renamePDSMember-java.lang.String-java.util.TreeMap-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>renamePDSMember</h4>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html?is-external=true" title="class or interface in java.util">HashMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;renamePDSMember(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;DataSet,
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html?is-external=true" title="class or interface in java.util">TreeMap</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;renameMemberMap)
+                                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Rename a member from given dataset.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>DataSet</code> - A dataset name contains a member.</dd>
+<dd><code>renameMemberMap</code> - It will contain member name to be renamed and member name to be renamed to.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>It will return an hashmap which contains respective response for member to be renamed.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - It will throw exception if there is an erroe in request.</dd>
+<dt><span class="simpleTagLabel">Since:</span></dt>
+<dd>2.6.0</dd>
 </dl>
 </li>
 </ul>
